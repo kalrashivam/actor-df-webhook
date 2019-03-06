@@ -1,0 +1,15 @@
+{
+  "name": "actor-webhook",
+  "version": "1.0.0",
+  "description": "this is the webhook for a dialogflow powered bot which is a an enactment of differnent actors in bollywood.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shivam kalra",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

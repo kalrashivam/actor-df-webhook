@@ -25,6 +25,19 @@ app.get('/actor/ping', (req,res) => {
 })
 
 app.get('/actor/addquestion/:question', (req,res) => {
-    params = req.param;
-    res.send(params);
+    params = req.params;
+    console.log(params);
+    res.status(200).send();
+})
+
+app.post('/actor/addanswers', (req,res) => {
+    body = req.body;
+    console.log(body.answers);
+    res.send('{"data":"got the answers successfully"}')
+});
+
+app.get('/actor/correctanswer/:correct', (req,res) => {
+    params = req.params;
+    console.log(params);
+    res.status(200).send(`{"data":"${params.correct}"}`)
 })
